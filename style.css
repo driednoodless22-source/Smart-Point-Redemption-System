@@ -761,3 +761,304 @@ body {
 .btn-yellow:hover {
     background: #e0b000;
 }
+.back-btn {
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    background: #1f4d2b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #16361f;
+}
+/* หน้าแก้ว */
+.plastic-page {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* กล่องหลัก */
+.type-box {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* หัวแถบสีเขียว */
+.green-bar {
+    background: #2ecc71;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* 🔥 จัดเรียงการ์ดให้อยู่ในแถวเดียว */
+.type-row {
+    display: flex;
+    justify-content: center;   /* จัดกลางแนวนอน */
+    gap: 40px;                 /* ระยะห่างระหว่างการ์ด */
+    margin-top: 30px;
+    flex-wrap: wrap;           /* จอเล็กให้ลงบรรทัดใหม่ */
+}
+
+/* การ์ดแต่ละอัน */
+.type-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* hover effect */
+.type-card:hover {
+    transform: translateY(-5px);
+}
+
+/* รูปภาพ */
+.type-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* แต้ม */
+.point-text {
+    color: #27ae60;
+    margin-top: 15px;
+}
+
+/* ปุ่มกลับ */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    background: #f1c40f;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+    font-weight: 600;
+}
+.detail-page{
+    text-align:center;
+    padding:40px;
+    font-family:'Kanit',sans-serif;
+}
+
+.detail-box{
+    background:#f5f5f5;
+    padding:30px;
+    border-radius:15px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.green-bar{
+    background:#1f4d1f;
+    color:white;
+    padding:12px;
+    border-radius:8px;
+}
+
+.detail-row{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.detail-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    width:250px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.detail-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.note{
+    margin-top:25px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:10px 20px;
+    background:#f1c40f;
+    border-radius:8px;
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+}
+/* รีเซ็ตพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+
+/* โครงสร้างหลัก */
+.project-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: #eaf4ea;
+    padding: 60px 8%;
+}
+
+/* ฝั่งซ้าย */
+.project-left {
+    width: 50%;
+}
+
+.small-title {
+    color: #2f5d2f;
+    margin-bottom: 15px;
+}
+
+.project-left h1 {
+    font-size: 48px;
+    color: #1f3d1f;
+    margin-bottom: 20px;
+}
+
+.project-left p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* ปุ่ม */
+.contact-btn {
+    display: inline-block;
+    background: #ffc107;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #e0a800;
+}
+
+/* ฝั่งขวา */
+.project-right {
+    width: 45%;
+}
+
+.project-right img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* ========================= */
+/* KNOWLEDGE PAGE (ใช้ธีมเดิม) */
+/* ========================= */
+
+/* HERO */
+.knowledge-hero {
+    height: 320px;
+    background: linear-gradient(rgba(0,80,0,0.6), rgba(0,80,0,0.6)),
+                url("banner.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.knowledge-hero h5 {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.knowledge-hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* CONTENT */
+.knowledge-content {
+    padding: 70px 8%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    background: #f5f5f5;   /* สีพื้นแบบเดิม */
+}
+
+/* CARD */
+.card {
+    background: white;
+    width: 330px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    position: relative;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+/* TAG */
+.tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #1b5e20;   /* เขียวเข้มแบบเว็บเดิม */
+    color: white;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+/* CARD BODY */
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    color: #1b5e20;  /* ใช้สีเขียวธีมหลัก */
+    font-size: 18px;
+    line-height: 1.4;
+}
+.knowledge-content {
+    padding: 80px 8%;
+    background: #f4f7f4;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;   /* ⭐ เพิ่มบรรทัดนี้ */
+}
