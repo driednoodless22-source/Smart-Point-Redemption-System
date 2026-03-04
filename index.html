@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+    <!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="nav-logo">
+        ระบบแลกแต้มอัจฉริยะ  
+    </div>
+
+    <nav class="nav-menu">
+        <a href="#">หน้าหลัก</a>
+        <a href="#">โครงการรีไซเคิลขยะ</a>
+        <a href="#">สาระน่ารู้</a>
+        <a href="#">เกี่ยวกับเรา</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="#" class="btn-green">รีไซเคิลเลย</a>
+        <a href="#" class="btn-yellow">ชิงรางวัล</a>
+    </div>
+
+</header>
+<head>
+    <meta charset="UTF-8">
+    <title>Trash Lucky</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-left">
+            <p class="small-title">ขยะรีไซเคิลลุ้นโชค</p>
+
+            <h1>แยก แลก ลุ้น</h1>
+
+            <p class="description">
+                เพียงคุณแยกขยะรีไซเคิลแล้วบริจาคให้เรา
+                รับสิทธิ์ลุ้นโชคตามปริมาณขยะของคุณ
+                ลุ้นรางวัลทุกเดือน!
+            </p>
+
+            <div class="hero-buttons">
+                <!-- ไปหน้าสมัคร -->
+                <a href="register.html" class="btn-yellow">รีไซเคิลเลย</a>
+
+                <!-- เลื่อนไป section ขั้นตอน -->
+                <a href="#steps" class="btn-green">ดูวิธี</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <!-- ใส่รูปตรงนี้ -->
+            <img src="1.jpg" alt="Recycle Image">
+        </div>
+
+    </section>
+
+<section id="steps" class="steps-section">
+
+    <h2 class="steps-title">ขั้นตอน</h2>
+    <div class="underline"></div>
+
+    <div class="steps-container">
+
+        <!-- STEP 1 -->
+        <div class="step-card">
+            <div class="step-icon">♻️</div>
+            <h3>1. แยก</h3>
+            <p>
+                คัดแยกขยะรีไซเคิลของคุณตามประเภท 
+                เช่น ขวดพลาสติก กระดาษ กระป๋อง
+                ไม่ควรรวมขยะต่างชนิดเข้าด้วยกัน
+            </p>
+            <a href="#" class="step-btn">ขยะรีไซเคิลที่เรารับ</a>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="step-card">
+            <div class="step-icon">📦</div>
+            <h3>2. แลก</h3>
+            <p>
+                นำขยะรีไซเคิลมาส่งที่จุดรับของเรา
+                ระบบจะคำนวณน้ำหนักและเพิ่มคะแนน
+                ให้คุณโดยอัตโนมัติ
+            </p>
+            <a href="#" class="step-btn" onclick="openModal()">ดูวิธีการส่ง</a>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="step-card">
+            <div class="step-icon">🎁</div>
+            <h3>3. ลุ้น</h3>
+            <p>
+                ใช้คะแนนสะสมแลกรางวัล
+                หรือร่วมลุ้นของรางวัลพิเศษ
+                ประจำเดือนจากระบบ
+            </p>
+            <a href="#" class="step-btn">รางวัลของเรา</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RECYCLE TYPES SECTION -->
+<section class="recycle-section">
+
+    <h2 class="recycle-title">ขยะรีไซเคิลที่เรารับ</h2>
+    <div class="underline"></div>
+
+    <div class="recycle-container">
+
+        <!-- พลาสติก -->
+        <div class="recycle-item">
+    <a href="plastic.html" class="circle-link">
+        <div class="circle">
+            <img src="ขวดพลาสติก.jpg" alt="พลาสติก">
+           <a href="plastic.html" class="overlay-btn">อ่านต่อ</a>
+        </div>
+    </a>
+    <h3>พลาสติก</h3>
+</div>
+
+        <!-- แก้ว -->
+        <div class="recycle-item">
+            <div class="circle">
+                <img src="ขวดแก้ว.jpg" alt="แก้ว">
+                <a href="#" class="overlay-btn">อ่านต่อ</a>
+            </div>
+            <h3>แก้ว</h3>
+        </div>
+
+        <!-- กระดาษ -->
+        <div class="recycle-item">
+            <div class="circle">
+                <img src="ลังกระดาษ.jpg" alt="กระดาษ">
+                <a href="#" class="overlay-btn">อ่านต่อ</a>
+            </div>
+            <h3>กระดาษ</h3>
+        </div>
+
+        <!-- โลหะ -->
+        <div class="recycle-item">
+            <div class="circle">
+                <img src="กระป๋อง.jpg" alt="โลหะ">
+                <a href="#" class="overlay-btn">อ่านต่อ</a>
+            </div>
+            <h3>โลหะ</h3>
+        </div>
+
+    </div>
+
+</section>
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+
+    <h2 class="contact-title">ติดต่อเรา</h2>
+    <div class="underline"></div>
+
+    <div class="contact-container">
+
+        <!-- ข้อมูลติดต่อ -->
+        <div class="contact-info">
+            <h3>ข้อมูลการติดต่อ</h3>
+
+            <p><strong>ที่อยู่:</strong> 123  ต.หนองจ๊อม เชียงใหม่</p>
+            <p><strong>โทรศัพท์:</strong> 02-123-4567</p>
+            <p><strong>Email:</strong> driednoodless22@gmail.com</p>
+            <p><strong>เวลาทำการ:</strong> จันทร์ - เสาร์ 09:00 - 18:00 น.</p>
+
+            <div class="contact-social">
+                <a href="#">Facebook</a>
+                <a href="#">LINE</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+
+        <!-- ฟอร์มติดต่อ -->
+        <div class="contact-form">
+            <h3>ส่งข้อความถึงเรา</h3>
+
+            <form>
+                <input type="text" placeholder="ชื่อของคุณ" required>
+                <input type="email" placeholder="อีเมลของคุณ" required>
+                <textarea rows="5" placeholder="ข้อความของคุณ" required></textarea>
+                <button type="submit">ส่งข้อความ</button>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+    </section>  <!-- จบ Contact Section -->
+
+    <!-- 👇 วาง Popup ตรงนี้ -->
+    <div id="sendModal" class="modal">
+        ...
+    </div>
+
+    <!-- 👇 วาง Script ตรงนี้ -->
+    <script>
+        function openModal() {
+            document.getElementById("sendModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("sendModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            let modal = document.getElementById("sendModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

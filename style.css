@@ -1,0 +1,763 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    min-height: 90vh;
+    background: linear-gradient(to right, #eaf5ea 50%, white 50%);
+}
+
+/* LEFT SIDE */
+.hero-left {
+    width: 50%;
+}
+
+.small-title {
+    color: #2e7d32;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-left h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-yellow {
+    background: #f4c20d;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-yellow:hover {
+    background: #e6b800;
+}
+
+.btn-green {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-green:hover {
+    background: #1b5e20;
+}
+
+/* RIGHT SIDE */
+.hero-right {
+    width: 50%;
+    text-align: right;
+}
+
+.hero-right img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        background: #eaf5ea;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+    }
+
+    .hero-right img {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+/* ทำให้เลื่อนลื่น */
+html {
+    scroll-behavior: smooth;
+}
+
+/* STEPS SECTION */
+.steps-section {
+    padding: 120px 10%;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+.steps-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background: #f4c20d;
+    margin: 15px auto 60px auto;
+    border-radius: 10px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.step-card {
+    background: white;
+    width: 320px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.step-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.step-card h3 {
+    color: #2e7d32;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.step-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.step-btn {
+    text-decoration: none;
+    background: #f4c20d;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.step-btn:hover {
+    background: #e6b800;
+}
+/* RECYCLE SECTION */
+.recycle-section {
+    padding: 120px 10%;
+    text-align: center;
+    background: #dcebdc;
+}
+
+.recycle-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1b5e20;
+}
+
+.recycle-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.recycle-item h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #1b5e20;
+}
+
+/* วงกลมรูป */
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* ปุ่มซ้อนกลางรูป */
+.overlay-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.8);
+    padding: 10px 25px;
+    border: 2px solid white;
+    color: #1b5e20;
+    font-weight: 600;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+/* Hover Effect */
+.circle:hover img {
+    transform: scale(1.1);
+}
+
+.circle:hover .overlay-btn {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .recycle-container {
+        gap: 30px;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+}
+/* CONTACT SECTION */
+.contact-section {
+    padding: 120px 10%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1b5e20;
+}
+
+.contact-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+/* ฝั่งข้อมูล */
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.contact-social {
+    margin-top: 20px;
+}
+
+.contact-social a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+/* ฝั่งฟอร์ม */
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Kanit', sans-serif;
+}
+
+.contact-form button {
+    background: #f4c20d;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e6b800;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info, .contact-form {
+        text-align: center;
+    }
+}
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: #f4c20d;
+    padding: 60px 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 5% auto;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content h2 {
+    font-size: 48px;
+    color: #1b5e20;
+}
+
+.subtitle {
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.modal-item {
+    width: 280px;
+}
+
+.modal-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.green-btn {
+    margin-top: 15px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.green-btn:hover {
+    background: #1b5e20;
+}
+/* ===== PLASTIC PAGE ===== */
+
+.plastic-page {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.big-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.green-bar {
+    background: #1f4d2b;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.type-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.type-card {
+    width: 180px;
+}
+
+.type-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.point-text {
+    font-size: 28px;
+    font-weight: bold;
+}
+/* ===== PLASTIC PAGE ===== */
+
+body {
+    margin: 0;
+    font-family: "Prompt", sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Section */
+.plastic-page {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* หัวข้อใหญ่ */
+.big-title {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+/* กล่องหมวด */
+.type-box {
+    background: white;
+    padding: 40px 20px 60px;
+    margin: 40px auto;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* แถบเขียว */
+.green-bar {
+    background: #1f4d2b;
+    color: white;
+    padding: 18px;
+    font-size: 26px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+/* เรียงรูป */
+.type-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* การ์ดแต่ละอัน */
+.type-card {
+    width: 200px;
+    transition: 0.3s;
+}
+
+.type-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Hover effect */
+.type-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ข้อความใต้รูป */
+.type-card p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* แต้ม */
+.point-text {
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+}
+/* ===== PLASTIC PAGE ===== */
+
+body {
+    margin: 0;
+    font-family: "Prompt", sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Section */
+.plastic-page {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* หัวข้อใหญ่ */
+.big-title {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+/* กล่องหมวด */
+.type-box {
+    background: white;
+    padding: 40px 20px 60px;
+    margin: 40px auto;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* แถบเขียว */
+.green-bar {
+    background: #1f4d2b;
+    color: white;
+    padding: 18px;
+    font-size: 26px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+/* เรียงรูป */
+.type-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* การ์ดแต่ละอัน */
+.type-card {
+    width: 200px;
+    transition: 0.3s;
+}
+
+.type-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Hover effect */
+.type-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ข้อความใต้รูป */
+.type-card p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* แต้ม */
+.point-text {
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+}
+.back-btn {
+    display: inline-block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #1f4d2b;
+    font-weight: bold;
+}
+.type-box {
+    background: white;
+    padding: 40px 20px 60px;
+    margin: 40px auto;   /* 👈 ตัวนี้ทำให้กลาง */
+    max-width: 600px;    /* 👈 จำกัดความกว้าง */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;  /* 👈 ทำให้ข้อความกลาง */
+}
+.type-card img {
+    display: block;
+    margin: 0 auto;   /* ตัวนี้ทำให้รูปกลางแน่นอน */
+}
+/* ===== NAVBAR ===== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #f5f5f5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* โลโก้ */
+.nav-logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2f6b2f;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* เมนูกลาง */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #2f6b2f;
+}
+
+/* เส้นใต้เวลา hover */
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #2f6b2f;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* ปุ่มขวา */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* ปุ่มเขียว */
+.btn-green {
+    background: #2f6b2f;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-green:hover {
+    background: #245424;
+}
+
+/* ปุ่มเหลือง */
+.btn-yellow {
+    background: #f4c400;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-yellow:hover {
+    background: #e0b000;
+}
