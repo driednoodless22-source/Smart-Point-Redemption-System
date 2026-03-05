@@ -1253,3 +1253,91 @@ width:100%;
 border-radius:8px;
 margin-bottom:10px;
 }
+/* ===== REWARD PAGE ===== */
+
+.reward-section{
+    padding:80px 10%;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+.reward-title{
+    font-size:40px;
+    color:#184d1a;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.reward-desc{
+    max-width:600px;
+    margin:auto;
+    margin-bottom:40px;
+    color:#555;
+    font-size:16px;
+}
+
+/* container การ์ด */
+.reward-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+/* การ์ดสินค้า */
+.reward-card{
+    width:220px;
+    background:#ffffff;
+    border-radius:12px;
+    padding:18px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.reward-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* รูปสินค้า */
+.reward-card img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+/* ชื่อสินค้า */
+.reward-card h3{
+    font-size:18px;
+    margin:5px 0;
+    color:#222;
+}
+
+.reward-card h4{
+    font-size:14px;
+    margin:0;
+    color:#666;
+}
+
+/* คะแนน */
+.reward-card p{
+    font-size:15px;
+    color:#333;
+    margin-top:5px;
+}
+
+/* ปุ่มแลก */
+.reward-card .btn-yellow{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:14px;
+}
+.navbar{
+position:sticky;
+top:0;
+z-index:1000;
+}
