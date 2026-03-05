@@ -1062,3 +1062,149 @@ body {
     gap: 30px;
     flex-wrap: wrap;   /* ⭐ เพิ่มบรรทัดนี้ */
 }
+/* ===== NAVBAR ===== */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* โลโก้ */
+.nav-logo{
+    font-size:22px;
+    font-weight:700;
+}
+
+/* เมนู */
+.nav-menu{
+    display:flex;
+    gap:35px;
+}
+
+.nav-menu a{
+    text-decoration:none;
+    color:#333;
+    font-size:16px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-menu a:hover{
+    color:#2ecc71;
+}
+
+/* ปุ่มด้านขวา */
+.nav-buttons{
+    display:flex;
+    gap:15px;
+}
+
+/* ปุ่มสีเขียว */
+.btn-green{
+    background:#27ae60;
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+/* ปุ่มสีเหลือง */
+.btn-yellow{
+    background:#f1c40f;
+    color:black;
+    padding:10px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.btn-green:hover{
+    background:#1e874b;
+}
+
+.btn-yellow:hover{
+    background:#d4ac0d;
+}
+/* การ์ดบทความ */
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+/* เวลาเอาเมาส์ไปชี้ */
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* รูปภาพ */
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* ป้าย RECYCLING */
+.tag{
+    position:absolute;
+    background:#27ae60;
+    color:white;
+    padding:5px 10px;
+    font-size:12px;
+    border-radius:4px;
+    margin:10px;
+}
+
+/* เนื้อหาการ์ด */
+.card-body{
+    padding:15px;
+}
+
+.card-body h3{
+    font-size:18px;
+    margin:0;
+}
+.card-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+/* ABOUT PAGE */
+
+.about-section{
+padding:80px 10%;
+background:#f5f5f5;
+}
+
+.about-container{
+display:flex;
+align-items:center;
+gap:60px;
+}
+
+.about-video iframe{
+width:500px;
+height:280px;
+border-radius:10px;
+}
+
+.about-text h1{
+font-size:42px;
+color:#184d1a;
+margin-bottom:20px;
+}
+
+.about-text p{
+font-size:16px;
+line-height:1.7;
+color:#333;
+margin-bottom:15px;
+}

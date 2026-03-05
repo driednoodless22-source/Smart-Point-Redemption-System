@@ -94,3 +94,45 @@ function addReward(){
 
     loadAdmin();
 }
+/* การ์ดบทความ */
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+/* เวลาเอาเมาส์ไปชี้ */
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* รูปภาพ */
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* ป้าย RECYCLING */
+.tag{
+    position:absolute;
+    background:#27ae60;
+    color:white;
+    padding:5px 10px;
+    font-size:12px;
+    border-radius:4px;
+    margin:10px;
+}
+
+/* เนื้อหาการ์ด */
+.card-body{
+    padding:15px;
+}
+
+.card-body h3{
+    font-size:18px;
+    margin:0;
+}
