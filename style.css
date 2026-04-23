@@ -1341,3 +1341,289 @@ position:sticky;
 top:0;
 z-index:1000;
 }
+.more-btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 16px;
+    background:#4CAF50;
+    color:white;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.more-btn:hover{
+    background:#3c9c41;
+}
+/* ===== RECYCLE SECTION ===== */
+.recycle-section {
+    padding: 80px 8%;
+    background: #f4f7f4;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== HEADER (QR + BUTTON) ===== */
+.action-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.qr-main {
+    text-align: center;
+}
+
+.qr-img {
+    width: 120px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-get-qr {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn-get-qr:hover {
+    background: #1b5e20;
+}
+
+/* ===== STEPS ===== */
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+/* ===== CARD ===== */
+.step-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-8px);
+}
+
+.step-card h3 {
+    font-size: 16px;
+    color: #1b5e20;
+    margin: 15px 0;
+}
+
+.step-card p {
+    font-size: 13px;
+    color: #555;
+}
+
+/* ===== ICON WRAP ===== */
+.step-icon-wrap {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.step-icon-wrap img {
+    width: 35px;
+}
+
+/* ===== STEP NUMBER ===== */
+.step-num {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background: #fff;
+    color: #333;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px 7px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* ===== COLORS ===== */
+.blue { background: #2196f3; }
+.teal { background: #009688; }
+.green { background: #4caf50; }
+.light-blue { background: #03a9f4; }
+.orange { background: #ff9800; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .steps-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .steps-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .action-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+}
+.location-section {
+    padding: 60px 20px;
+    background-color: #f4f7f4;
+    font-family: 'Kanit', sans-serif;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    color: #2d5a27;
+    font-size: 2.2rem;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.location-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    position: relative;
+    transition: 0.3s;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+}
+
+.location-status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.status.online {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.location-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.location-details {
+    padding: 25px;
+}
+
+.location-details h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.address {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.btn-map {
+    display: block;
+    text-align: center;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-map:hover {
+    background-color: #218838;
+}
+
+/* สไตล์สำหรับจุดที่กำลังจะเปิด */
+.upcoming {
+    border: 2px dashed #ccc;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.upcoming-content {
+    text-align: center;
+    color: #999;
+}
+
+.upcoming-content i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.map-container {
+    width: 100%;
+    border-radius: 15px; /* ทำมุมโค้งให้เข้ากับ Card */
+    overflow: hidden;    /* กันแผนที่ล้นออกมานอกมุมโค้ง */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    display: block; /* ลบช่องว่างใต้ iframe */
+}
+.container {
+    display: flex;
+    justify-content: center; /* จัดแนวนอนให้อยู่กลาง */
+    align-items: center;     /* จัดแนวตั้งให้อยู่กลาง (ถ้าความสูง container เยอะ) */
+    gap: 20px;               /* ระยะห่างระหว่าง Card */
+    flex-wrap: wrap;         /* ถ้าหน้าจอแคบลง ให้ Card ลงมาบรรทัดใหม่ */
+    padding: 40px;
+}
